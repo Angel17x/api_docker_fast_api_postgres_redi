@@ -1,0 +1,10 @@
+fastapi>=0.68.0,<0.69.0
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
+python-dotenv>=0.21.1,<1.0.0
+email-validator==1.1.1
+# db
+databases[postgresql]==0.7.0
+SQLAlchemy>=1.4.42,<1.5
+alembic==1.11.1
+psycopg2==2.9.6

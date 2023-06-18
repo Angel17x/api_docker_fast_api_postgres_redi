@@ -1,0 +1,8 @@
+# Byte-compiled files
+__pycache__/
+
+# Environment files
+.env
+app/env.dev
+app/env.prod
+app/env.qa
