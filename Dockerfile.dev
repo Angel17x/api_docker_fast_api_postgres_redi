@@ -4,11 +4,17 @@ RUN mkdir -p /home/app
 
 WORKDIR /home/app
 
-COPY ./requirements.txt /home/app/requirements.txt
+ENV REDIS_USERNAME = "aelo"
+ENV REDIS_PASSWORD = "aelohack23."
 
+COPY ./requirements.txt /home/app/requirements.txt
 COPY ./.env /home/app/.env
 
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade -r /home/app/requirements.txt
+
+# Instalar Redis y agregar usuario
+RUN apt-get update && apt-get install -y redis-tools
 
 EXPOSE 3000
 

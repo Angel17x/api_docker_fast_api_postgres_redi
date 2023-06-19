@@ -8,3 +8,7 @@ databases[postgresql]==0.7.0
 SQLAlchemy>=1.4.42,<1.5
 alembic==1.11.1
 psycopg2==2.9.6
+psycopg2-binary==2.9.6
+fastapi-jwt-auth
+pyjwt
+redis
