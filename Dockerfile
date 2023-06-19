@@ -5,6 +5,7 @@ RUN mkdir -p /home/app
 WORKDIR /home/app
 
 COPY ./requirements.txt /home/app/requirements.txt
+COPY *.sql /docker-entrypoint-initdb.d/
 
 RUN pip install --no-cache-dir --upgrade -r /home/app/requirements.txt
 
